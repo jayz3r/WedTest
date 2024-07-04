@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Great;
+  src: url(fonts/GERALDINE\ PERSONAL\ USE.ttf);
+}
+@font-face {
+  font-family: Good;
+  src: url(fonts/FFGoodPro-Black.ttf);
+}
+body {
+  background-color: #fff2d7;
+  font-family: Good;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding-bottom: 200px;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #fff2d7 100%
+  );
+}
+header {
+  font-family: Great;
+  color: white;
+  font-size: 2rem;
+  padding: 20px 50px 0;
+  display: flex;
+  /* justify-content: center; */
+}
+.mainSection {
+  font-family: Good;
+  font-weight: 900;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 50px;
+  bottom: 200px;
+}
+.mainSection h2 {
+  font-size: 2rem;
+}
+.mainSection p {
+  font-size: 2rem;
+}
+
+.timer {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.time h3 {
+  font-size: 2rem;
+}
+.time span {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+.time small {
+  font-size: 1.4rem;
+}
+.surveySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs {
+    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.inputs input {
+  background-color: transparent;
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+}
+.radios {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.choice {
+  text-align: center;
+}
+form {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 50px;
+    background-color: #ffeecd;
+    border-radius: 20px;
+}
+button{
+    padding: 15px 50px;
+    border-radius: 15px  ;
+    background-color: #F98866;
+    cursor: pointer;
+    border-color: white;
+    outline: none;
+}
+button:hover{
+    background-color: #fff2d7;
+    transform: scale(1.1);
+}
+footer{
+    margin-top: 50px;
+}
+@media (max-width: 1660px) {
+    .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(A&S.jpg);
+        background-repeat: no-repeat;
+        /* background-position: center;   */
+        background-size: cover;
+        object-fit: cover;
+        padding-bottom: 200px;
+      }
+}
+@media (max-width: 760px) {
+    header{
+        position: absolute;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        top: 50px;
+    }
+  .wrapper {
+    background-image: url(Aisenem&Sanjar.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
+  .mainSection{
+    right: 50px;
+    bottom: 15px;
+    text-align: center;
+  }
+  .mainSection h2{
+    text-align: center;
+    padding-bottom: 15px;
+}
+  .mainSection p{
+    font-size: 1.3rem;
+  }
+  .timer{
+    width: 400px;
+  }
+  .time{
+    gap: 20px;
+  }
+  span{
+    display: none;
+  }
+  .surveySection{
+    width: auto;
+  }
+  form{
+    width: 400px;
+  }
+footer{
+    display: flex;
+    text-align: center;
+}
+}
