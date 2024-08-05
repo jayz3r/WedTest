@@ -170,19 +170,34 @@ footer {
     font-size: 3rem;
     top: 50px;
   }
-  /* body {
+  body {
     background-attachment: fixed ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: none;
-  } */
+  }
   iframe {
     width: 350px;
     height: 300px;
   }
-  .wrapper {
-    background-image: url(./Aisenem&Sanjar.jpg);
+  body{
+    background-color: transparent;
+  }
+  .wrapper{
+    background: none;
+  }
+  .background:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(./Aisenem&Sanjar.jpg) no-repeat center center;
+    background-size: cover;
   }
   .wrapper::after {
     content: none;
