@@ -17,8 +17,7 @@ html, body {
 } */
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 body {
-  /* background-color: #fff2d7; */
-  background-color: black;
+  background-color: #fff2d7;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -192,17 +191,17 @@ footer {
     height: 300px;
   }
   body{
-    background-color: transparent;
+    background-color: black;
   }
 
-  .background:before {
-    content: "";
-    display: block;
+  html {
+    /* content: ""; */
+    /* display: block; */
     /* position: fixed; */
-    left: 0;
-    top: 0;
-    /* width: 100%; */
-    /* height: 10%; */
+    /* left: 0; */
+    /* top: 0; */
+    width: 100%;
+    height: 10%;
     z-index: -10;
     background: url(./Aisenem&Sanjar.jpg) no-repeat center center;
     background-size: cover;
