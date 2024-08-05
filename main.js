@@ -5,7 +5,7 @@ const sec = document.querySelector("#seconds");
 
 const currentDate = new Date().getFullYear();
 
-const WeddingTime = new Date("August 29 2024 18:00:00");
+const WeddingTime = new Date("September 29 2024 18:00:00");
 
 const updateCountdown = () => {
   const currentTime = new Date();
