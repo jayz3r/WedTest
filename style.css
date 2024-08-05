@@ -17,12 +17,13 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-
   font-weight: lighter;
+  margin: 0; /* Ensure body has no margin */
+  padding: 0; /* Ensure body has no padding */
 }
-/* iframe {
+iframe {
   margin: 50px 0 0;
-} */
+}
 .wrapper {
   position: relative;
   width: 100%;
@@ -171,11 +172,15 @@ footer {
     top: 50px;
   }
   body {
-    background-attachment: fixed ;
+    background-image: url("Aisenem&Sanjar.jpg");
+    background-attachment: fixed; /* Fix the background for mobile devices */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: none;
+  }
+
+  .wrapper {
+    background-image: none; /* Ensure no background image in wrapper */
   }
   iframe {
     width: 350px;
@@ -184,9 +189,7 @@ footer {
   body{
     background-color: transparent;
   }
-  .wrapper{
-    background: none;
-  }
+
   .background:before {
     content: "";
     display: block;
