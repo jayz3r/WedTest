@@ -194,10 +194,11 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     z-index: -10;
     background: url(./Aisenem&Sanjar.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
   }
   .wrapper::after {
     content: none;
