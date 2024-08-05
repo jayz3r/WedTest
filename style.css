@@ -175,13 +175,13 @@ footer {
     font-size: 3rem;
     top: 50px;
   }
-  body {
+  /* body {
     background-image: url("Aisenem&Sanjar.jpg");
-    background-attachment: fixed; /* Fix the background for mobile devices */
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
+  } */
 
   .wrapper {
     background-image: none; /* Ensure no background image in wrapper */
